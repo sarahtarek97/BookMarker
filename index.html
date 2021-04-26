@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Bookmarker</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dc3d39a9b7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container m-4 mx-auto p-3">
+            <h2 class="text-muted">Bookmarker</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="well text-center p-5 bg-light">
+            <div class="row flex-column">
+                <div>
+                    <h2>Bookmark your favorite sites </h2>
+                    <p class="m-3">Site Name</p>
+                    <input class="p-1 m-auto" id="siteName" placeholder="Bookmark Name" type="text" />
+                    <p class="alert alert-error m-auto" id="nameError"></p>
+                    <p class="m-3">Site URL</p>
+                    <input class="p-1 m-auto" id="siteUrl" placeholder="website URL" type="text" />
+                    <p class="alert alert-error m-auto" id="urlError"></p>
+                    <div class="m-auto">
+                        <button class="m-3 btn btn-primary" onclick="submit();">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="bookmarkList" class="row flex-column">
+
+        </div>
+    </div>
+    <footer>
+        <div class="container m-4 mx-auto p-3">
+            <p class="text-muted"><i class="far fa-copyright"></i> 2021 Bookmarker Inc.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="mine.js"></script>
+</body>
+
+</html>
